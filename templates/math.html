@@ -1,0 +1,14 @@
+{% extends'layout.html' %}
+
+{% block body %}     
+    <h1>MATH</h1>
+    <ul class="list-group">
+    {% for amr in amrs %}
+        <li class="list-group-item">
+            <a href="amr/{{amr.id1}}">{{amr.title}}</a>
+            <p>{{amr.body}}</p>
+            <small>{{amr.author}} | {{amr.date}}</small>
+        </li>
+    {% endfor %}      
+    </ul>   
+{% endblock %}
